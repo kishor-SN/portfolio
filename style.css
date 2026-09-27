@@ -292,6 +292,30 @@ input {
 
     gap: 70px;
 }
+/* =====================================================
+   PROFILE PHOTO
+   ===================================================== */
+
+.profile-photo-wrap {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 18px;
+}
+
+.profile-photo {
+    width: 190px;
+    height: 190px;
+    object-fit: cover;
+    border-radius: 50%;
+
+    border: 3px solid rgba(255, 255, 255, 0.9);
+
+    box-shadow:
+        0 8px 20px rgba(0, 0, 0, 0.25);
+
+    display: block;
+}
 
 
 /* =====================================================
@@ -1918,4 +1942,37 @@ tbody tr:last-child td {
         font-size: 0.78rem;
     }
 
+}
+/* =====================================================
+   PROFILE PHOTO - FINAL SIZE
+   ===================================================== */
+
+.profile-photo-wrap {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.profile-photo-wrap img,
+.profile-photo {
+    width: 200px !important;
+    height: 200px !important;
+
+    min-width: 200px !important;
+    min-height: 200px !important;
+
+    max-width: none !important;
+    max-height: none !important;
+
+    object-fit: cover;
+    display: block;
+
+    border-radius: 50%;
+
+    border: 3px solid rgba(255, 255, 255, 0.9);
+
+    box-shadow:
+        0 10px 30px rgba(0, 0, 0, 0.30);
 }
